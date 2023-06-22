@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veronika | AJAX</title>
+    <link rel="stylesheet" href="./assets/css/fa6.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <script src="./assets/js/fa6.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </head>
+  <body>
+    <div class="loading">
+      <i class="fa-solid fa-arrows-rotate fa-spin"></i>
+    </div>
+    <div class="container">
+      <form id="userSearch" action="#" method="POST">
+        <div class="searchBox">
+          <input id="id" class="searchInput" type="text" name="id" placeholder="Search for ID">
+          <button class="searchButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </form>
+      <div class="error"></div>
+      <table>
+        <thead>
+          <tr>
+            <td>Id</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Age</td>
+            <td>Salary</td>
+          </tr>
+        </thead>
+        <tbody id="userInfo"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
